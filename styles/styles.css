@@ -98,7 +98,6 @@ body {
     width: 1920px;
     margin: 0px auto;
     height: 80vh;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,7 +114,9 @@ body {
     flex-direction: column;
     gap: 20px;
     background-image: url('../images/Group14.png');
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff2f9;
 }
 
 .banner-title1 {
@@ -164,6 +165,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #FFF;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
 .banner-image img {
@@ -180,7 +182,8 @@ body {
     margin: 0px auto;
     padding: 0px 220px;
     height: 600px;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    background-color: #FFF;
+    background: linear-gradient(220deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
 .banner2-text {
@@ -269,7 +272,20 @@ body {
 .online-game-cards:hover {
     cursor: pointer;
 }
+    /* careers */
 
+    .careers-container{
+        width:1920px;
+        height: 840px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/Group14.png');
+        
+        background-color: #f68bcb;
+        background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    }
 
 
 
