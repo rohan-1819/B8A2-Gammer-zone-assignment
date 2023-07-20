@@ -1,0 +1,15 @@
+@media screen and (max-width: 576px) {
+    .nav-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nav-items-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-container {
+        height: 100vh;
+        flex-direction: column;
+        gap: 50px;
+    }
+}

@@ -28,7 +28,7 @@ body {
 /* navbar here  */
 
 .nav-container {
-    max-width: 1920px;
+    width: 100%;
     margin: 0px auto;
     height: 20vh;
     display: flex;
@@ -95,9 +95,9 @@ body {
 /* banner item1 here  */
 
 .banner-container {
-    width: 1920px;
+    width: 100%;
     margin: 0px auto;
-    height: 700px;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,8 +106,8 @@ body {
 
 .banner-text {
     /* border: 1px solid red; */
-    width: 900px;
-    height: 700px;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +115,7 @@ body {
     gap: 20px;
     background-image: url('../images/Group14.png');
     background-repeat: no-repeat;
-    /* background-size: ; */
+    background-size: 100%;
     /* background-color: #fff2f9; */
 }
 
@@ -159,8 +159,8 @@ body {
 
 .banner-image {
     /* border: 1px solid green; */
-    width: 900px;
-    height: 700px;
+    width: 50%;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,24 +174,29 @@ body {
 /* banner item2 here  */
 
 .banner2-container {
+    /* border: 2px solid pink; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 1920px;
+    width: 100%;
     margin: 0px auto;
-    padding: 0px 120px;
-    height: 600px;
+    padding: 0px 80px;
+    height: 100vh;
     background-color: #FFF;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
-.banner2-text {
+.banner2-img {
+    width: 50%;
+}
 
+.banner2-text {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: end;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .banner2-title,
@@ -224,7 +229,7 @@ body {
 /* online game  */
 .online-game-container {
     /* border: 1px solid red; */
-    width: 1920px;
+    width: 100%;
     height: 100vh;
     margin: 0px auto;
     display: flex;
@@ -274,6 +279,7 @@ body {
 
 
 .card-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: auto;
@@ -289,11 +295,17 @@ body {
     font-weight: 500;
 }
 
+.card>img {
+    width: 100%;
+    height: 100%;
+
+}
+
 .card {
     /* border: 2px solid violet; */
     column-gap: 20px;
-    width: 340px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -320,53 +332,67 @@ body {
 }
 
 .play-icon {
-    font-size: 40px;
     color: #fff;
     margin-bottom: 10px;
 }
 
 .watch-now {
-    font-size: 20px;
+    font-size: 18px;
     color: #c16363;
 }
 
 /* instant-play section  */
 
 .play-container {
-    /* border: 2px solid blue; */
-    width: 1920px;
-    margin: 0px auto;
-    display: grid;
-    grid-template-columns: auto;
-    /* margin-top: 120px; */
-}
-
-.instant-play {
-    /* border: 2px solid blue; */
-    margin-left: 220px;
-    margin: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+   
 
 }
 
 .instant-play-text {
-    /* border: 2px solid red; */
-    width: auto;
     display: flex;
-    justify-content: center;
-    align-items: start;
     flex-direction: column;
+    gap: 30px;
+    text-align: right;
+   margin-right: 160px;
+   margin-bottom: 200px;
+
 }
 
+.play-tittle1 {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
 
-.instant-play-text > p {
-    color: #534C64;
-    font-size: 18px;
-    padding:20px 0px;
-    padding-right: 30px;
-    font-weight: 400;
+
+
+}
+
+.instant-play {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.play-img img {
+    width: 100%;
+    height: ;
+}
+
+.play-img,
+.instant-play-text {
+    width: 50%;
+}
+
+.sub-img img {
+    width: 40%;
+    position: relative;
+    bottom: 200px;
+    right: 70px;
+
 }
 
 /* careers */
@@ -376,8 +402,9 @@ body {
 
 /* games */
 .games {
-    width: 1920px;
-    height: 440px;
+
+    width: 100%;
+    height: 80vh;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -392,24 +419,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
 }
 
 .game-item {
     background-color: #fff;
     border-radius: 50px;
     display: flex;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     /* gap: 15px; */
     /* border: 1px solid red; */
-    width: 280px;
-    height: 80px;
 }
 
-.games p {
+.game-item p {
     color: #0B0223;
-    padding: 15px;
+    padding: 10px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -429,8 +455,8 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 60px;
-    width: 1920px;
-    height: 640px;
+    width: 100%;
+    height: 100vh;
     margin: 0px auto;
     background: #0B0223;
 }
