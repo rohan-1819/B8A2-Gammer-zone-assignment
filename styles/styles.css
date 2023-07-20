@@ -119,7 +119,8 @@ body {
     /* background-color: #fff2f9; */
 }
 
-.banner-title1 {
+.banner-title1,
+.play-tittle1 {
     text-transform: uppercase;
     color: #0B0223;
     text-align: center;
@@ -158,13 +159,11 @@ body {
 
 .banner-image {
     /* border: 1px solid green; */
-    /* padding-top: 20px 240px 0px 60px; */
     width: 900px;
     height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%); */
 }
 
 .banner-image img {
@@ -183,7 +182,7 @@ body {
     padding: 0px 120px;
     height: 600px;
     background-color: #FFF;
-    background: linear-gradient(220deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
 .banner2-text {
@@ -195,10 +194,15 @@ body {
     justify-content: center;
 }
 
-.banner2-title {
+.banner2-title,
+.play-tittle2 {
     text-align: right;
     font-size: 48px;
     font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .banner2-description {
@@ -327,35 +331,41 @@ body {
 }
 
 /* instant-play section  */
+
 .play-container {
+    /* border: 2px solid blue; */
     width: 1920px;
-    height: auto;
     margin: 0px auto;
+    display: grid;
+    grid-template-columns: auto;
+    /* margin-top: 120px; */
 }
 
 .instant-play {
-    border: 2px solid darkred;
-    margin-left: 440px;
+    /* border: 2px solid blue; */
+    margin-left: 220px;
+    margin: 120px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
+
 }
 
-.intstant-play-text {
-    border: 2px solid green;
-    /* display: grid;
-    grid-template-rows: repeat(2,1fr); */
+.instant-play-text {
+    /* border: 2px solid red; */
+    width: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: start;
+    flex-direction: column;
 }
 
-.intstant-play-description {
+
+.instant-play-text > p {
     color: #534C64;
-    text-align: right;
-    width: 340px;
     font-size: 18px;
+    padding:20px 0px;
+    padding-right: 30px;
     font-weight: 400;
 }
 
@@ -385,12 +395,31 @@ body {
     gap: 60px;
 }
 
+.game-item {
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 15px; */
+    /* border: 1px solid red; */
+    width: 280px;
+    height: 80px;
+}
+
 .games p {
     color: #0B0223;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 16px;
     font-weight: 600;
 }
 
+.game-item:hover {
+    cursor: pointer;
+    border: 1px solid pink;
+    background-color: rgb(252, 228, 232);
+    border-radius: 50px;
+}
 
 /* footer */
 
