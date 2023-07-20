@@ -97,17 +97,17 @@ body {
 .banner-container {
     width: 1920px;
     margin: 0px auto;
-    height: 80vh;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    /* background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%); */
 }
 
 .banner-text {
     /* border: 1px solid red; */
-    width: 50%;
-    height: 100%;
+    width: 900px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,8 +115,8 @@ body {
     gap: 20px;
     background-image: url('../images/Group14.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #fff2f9;
+    /* background-size: ; */
+    /* background-color: #fff2f9; */
 }
 
 .banner-title1 {
@@ -158,29 +158,29 @@ body {
 
 .banner-image {
     /* border: 1px solid green; */
-    padding-top: 20px 240px 0px 60px;
-    width: 50%;
-    height: 100%;
+    /* padding-top: 20px 240px 0px 60px; */
+    width: 900px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFF;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    /* background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%); */
 }
 
 .banner-image img {
-    width: fit-content;
+    width: 100%;
+    height: 100%;
 }
 
 /* banner item2 here  */
 
 .banner2-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 1920px;
     margin: 0px auto;
-    padding: 0px 220px;
+    padding: 0px 120px;
     height: 600px;
     background-color: #FFF;
     background: linear-gradient(220deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
@@ -219,8 +219,10 @@ body {
 
 /* online game  */
 .online-game-container {
+    /* border: 1px solid red; */
     width: 1920px;
     height: 100vh;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     padding: 120px 240px;
@@ -230,7 +232,17 @@ body {
 
 }
 
+.game-container-text {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .online-game-title {
+    /* border: 1px solid black; */
     color: #0B0223;
     font-size: 48px;
     font-weight: 700;
@@ -254,40 +266,100 @@ body {
     font-weight: 400;
 }
 
-.online-game-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+/* .online-game-cards */
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    gap: 30px;
+    /* border: 2px solid rgb(13, 13, 12); */
+}
+
+.card-description {
+    display: grid;
+    gap: 40px;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card {
+    /* border: 2px solid violet; */
+    column-gap: 20px;
     width: 340px;
     height: 400px;
-
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
-.online-game-cards>img {
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s ease;
 }
 
-.online-game-cards:hover {
-    cursor: pointer;
+
+.card:hover .card-content {
+    opacity: 1;
 }
-    /* careers */
 
-    .careers-container{
-        width:1920px;
-        height: 840px;
-        margin: 0px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url('../images/Group14.png');
-        
-        background-color: #f68bcb;
-        background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    }
+.play-icon {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
 
+.watch-now {
+    font-size: 20px;
+    color: #c16363;
+}
 
+/* instant-play section  */
+.play-container {
+    width: 1920px;
+    height: auto;
+    margin: 0px auto;
+}
+
+.instant-play {
+    border: 2px solid darkred;
+    margin-left: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intstant-play-text {
+    border: 2px solid green;
+    /* display: grid;
+    grid-template-rows: repeat(2,1fr); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.intstant-play-description {
+    color: #534C64;
+    text-align: right;
+    width: 340px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* careers */
 
 
 
